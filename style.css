@@ -1,0 +1,308 @@
+/* Global CSS  */
+:root{
+    --text-color:#000000ba;
+    --theme-color:#ff0060;
+    --white-color:#ffffff;
+    --black-color:#000000;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    padding:100px 0;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding:0 15px;
+}
+.row{
+    display: flex;
+    margin:0 -15px;
+    flex-wrap: wrap;
+}
+
+.col-6{
+    width: 50%;
+    padding:0 15px;
+}
+.col-4{
+    width: 33.33%;
+    padding:0 15px;
+}
+h1,h2,h3{
+    color:var(--black-color);
+}
+h1{
+    font-size: 55px;
+    color:var(--theme-color);
+    letter-spacing: 3px;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: 500;
+}
+p{
+    font-size: 17px;
+    color:var(--text-color);
+    line-height: 30px;
+}
+img {
+    width: 100%;
+    height: auto;
+  }
+
+.main-btn{
+    color:var(--white-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background: var(--theme-color);
+    color: #ffffff;
+    padding: 18px 45px;
+    border-radius: 10px;
+    transition: .3s;
+    border:3px solid var(--theme-color);
+}
+
+.main-btn:hover {
+    background: transparent;
+    color: var(--theme-color);
+  }
+
+/* Hero Section Start  */
+
+#hero {
+    background: url(./img/header-bg.png) no-repeat center;
+    background-size: cover;
+  }
+  .hero-text p {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .hero-img {
+    width: 600px;
+    display: inline-block;
+  }
+ 
+  .hero-text {
+    padding-left: 50px;
+  }
+
+  /* Biography Section Start  */
+
+  
+#biography {
+    background:antiquewhite url(./img/biography-bg.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .biography-img {
+    width: 600px;
+  }
+  
+  .biography-text {
+    margin-top: 70px;
+    padding-left: 89px;
+  }
+  .biography-text p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  /* Latest Work Section Start  */
+
+  
+#works {
+    background: url(./img/latest-work-bg.png) no-repeat center;
+    background-size: cover;
+  }
+  .section-title {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 94px;
+    font-weight: 600;
+  }
+
+  /* Client Section Start  */
+  #hero .row {
+    align-items: center;
+  }
+
+  #client .row {
+    justify-content: center;
+  }
+
+#client {
+    text-align: center;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px;
+  }
+  #client span {
+    color: var(--text-color);
+    font-size: 16px;
+  }
+  
+  #client p {
+    color: var(--black-color);
+    font-size: 20px;
+    margin: 59px 35px;
+    font-weight: 500;
+  }
+
+  /* Contact Section Start  */
+
+  .contact {
+    background: var(--theme-color);
+    color: var(--white-color);
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 15%;
+    padding: 65px;
+  }
+
+  #client .contact span {
+    color: aliceblue ;
+    font-size: 19px;
+  }
+  .contact h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 38px;
+  }
+
+  /* Footer Section Start  */
+
+  #footer {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  /* Responsive Part Start  */
+
+  @media screen and (max-width: 900px) {
+
+    .container{
+        width: 810px;
+    }
+
+    .delete-margin{
+        margin:-30px 0;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    #hero .row {
+        flex-direction: column-reverse;
+      }
+    .col-md-12{
+        width:100%;
+        padding:0 15px;
+    }
+    .col-md-6{
+        width:50%;
+        padding:0 15px;
+    }
+
+    #works .row .col-4 {
+        margin: 30px 0;
+    }
+    .hero-text {
+        padding-left: 0px;
+    }
+    #hero .col-6 {
+        text-align: center;
+      }
+
+      section {
+        padding: 60px 0;
+    }
+
+      .hero-img,.biography-img{
+          width: 460px;
+          display: inline-block;
+      }
+
+      .hero-text,.biography-text{
+        margin-top: 50px;
+      }
+
+      #biography {
+        text-align: center;
+    }
+
+      #biography {
+        text-align: center;
+      }
+
+      .biography-text {
+        padding-left: 0px;
+    }
+
+    #works .row {
+        flex-direction: row;
+      }
+
+      .section-title {
+        margin-bottom: 48px;
+    }
+    #client p {
+        margin: 44px 35px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 400px){
+    .container{
+        width: 350px;
+    }
+
+    .col-sm-12{
+        width:100%;
+    }
+
+    h2{
+        font-size: 37px;
+    }
+    h1{
+        font-size: 50px;
+    }
+
+    .hero-text p {
+        margin-top: 30px;
+
+    }
+
+    #client p {
+        margin: 44px 0px;
+    }
+
+    .hero-img,.biography-img{
+        width: 300px;
+    }
+
+    .contact {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .contact h4 {
+        font-size: 17px;
+    }
+  }
